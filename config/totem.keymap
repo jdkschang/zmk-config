@@ -105,7 +105,11 @@
 
         // +/-
         COMBO(minus, &kp MINUS, 21 34, BAS LEF RIG)        // left wing
-        COMBO(plus, &kp PLUS, 22 34, BAS LEF RIG)          // right wing
+        COMBO(plus, &kp PLUS, 22 34, BAS LEF RIG)          // left wing
+        // &/?
+        COMBO(ampersand, &kp AMPS, 6 34, BAS LEF RIG)      // quick tap layer
+        COMBO(layer_qmark, &kp QMARK, 30 34, BAS LEF RIG)     // quick tap layer
+        COMBO(shift_qmark, &kp QMARK, 13 30, BAS LEF RIG)     // quick tap shift
     };
 
     keymap {
