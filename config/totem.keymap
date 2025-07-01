@@ -16,8 +16,8 @@
 #include <dt-bindings/zmk/keys.h>
 
 // Home row mods macro
-#define HRML(k1,k2,k3,k4) &ht LGUI k1  &ht LCTRL k2  &ht LALT k3  &ht LSHFT k4
-#define HRMR(k2,k3,k4,k5) &ht RSHFT k2  &ht RALT k3  &ht RCTRL k4  &ht RGUI k5
+#define HRML(k1,k2,k3,k4,k5) &ht LGUI k1  &ht LCTRL k2  &ht LALT k3  &ht LSHFT k4 &ht LG(LC(LA(LSHIFT))) k5
+#define HRMR(k1,k2,k3,k4,k5) &ht LG(LC(LA(LSHIFT))) k1 &ht RSHFT k2  &ht RALT k3  &ht RCTRL k4  &ht RGUI k5
 
 // layers
 #define BAS 0
@@ -132,7 +132,7 @@
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                  &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
-                HRML(A,          S,          D,          F)      &kp G           &kp H      HRMR(J,          K,          L,          SEMI)
+                HRML(A,          S,          D,          F,          G)         HRMR(H,          J,          K,          L,          SEMI)
     &mt LCTRL ESC &kp Z      &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &mt RSHFT EQUAL
                                        &mt LSHFT TAB &kp BSPC    &lt LEF SPC     &lt RIG RET &kp SQT     &kp GRAVE
 
